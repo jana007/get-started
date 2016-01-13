@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Handlee);
+
+* {
+	margin:0;
+	padding:0; }
+
+ul {
+	margin:0em 1em 1em 2em; }
+
+html {
+	min-height:100%; }
+
+body {
+	min-width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:1.7em;
+	color:#333333;
+	background:url(../images/bgBody.png) center top repeat-y #e6e6e6; }
+
+a img {
+	border:0; }
+
+.show {
+	display:block; }
+
+.hide {
+	display:none; }
+
+hr {
+	height:0;
+	border:none;
+	border-top:1px solid #ccc; }
+
+/******************************
+Fonts
+*******************************/
+h1 {
+	font-size:2.5em;
+	padding:1em 0em .5em; }
+
+h2 {
+	font-size:1.6em;
+	padding:0.5em 0em; }
+
+h3 {
+	font-size:1.4em;
+	padding:0.5em 0em; }
+
+p {
+	font-size:1em;
+	line-height:1.7em; }
+
+a {
+	color:#8e1a1e;
+	text-decoration:none; }
+
+a:hover {
+	text-decoration:underline; }
+
+a[href ^='mailto:'] {
+	margin-left:3px;
+	padding:2px 0px 2px 20px;
+	background:transparent url(../images/icon_mailto.png) no-repeat center left; }
+
+/******************************
+Structure
+*******************************/
+#container {
+	margin-bottom:60px; }
+
+.wrap {
+	width:960px;
+	width:800px;
+	margin:0 auto;
+	position:relative; }
+
+#fsuHeader {
+	background:url(../images/garnetBg.gif) repeat-y top center #2b0007;
+	border-bottom:2px solid white;
+	box-shadow:0px 0px 5px #999; }
+
+#fsuHeader a.fsuLogo {
+	width:450px;
+	height:82px;
+	display:block;
+	background:url(../images/fsuDistance.png) left 8px no-repeat; }
+
+.formPad {
+	padding:5px 20px; }
+
+fieldset {
+	padding:3px;
+	border:none; }
+
+fieldset label {
+	width:160px;
+	margin-right:10px;
+	padding:2px 0px;
+	float:left;
+	text-align:right; }
+
+input,
+textarea,
+select {
+	padding:3px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666;
+	border:1px solid #ccc; }
+
+fieldset textarea {
+	width:340px;
+	height:100px; }
+
+fieldset input {
+	width:225px; }
+
+fieldset input.color {
+	width:auto; }
+
+#featuredArea {
+	width:420px;
+	margin-right:20px;
+	margin-bottom:1.4em;
+	padding:0.5em;
+	float:left;
+	position:relative; }
+
+#featuredArea fieldset textarea {
+	width:405px; }
+
+#selectColor {
+	display:none; }
+
+#example {
+	float:left;
+	position:relative; }
+
+.showFeatured,
+.showLeft,
+.showRight {
+	position:absolute;
+	z-index:10;
+	display:none;
+	background:no-repeat left top; }
+
+.showFeatured {
+	width:228px;
+	height:166px;
+	top:-25px;
+	left:-15px;
+	background-image:url(../images/select-featured.png); }
+
+.showLeft {
+	width:111px;
+	height:86px;background-image:url(../images/select-right.png);
+	bottom:50px;
+	left:-10px; }
+
+.showRight {
+	
+	width:96px;
+	height:105px;background-image:url(../images/select-left.png);
+	bottom:30px;
+	right:0px; }
+
+.columnLeft,
+.columnRight {
+	margin-bottom:1.4em;
+	padding:0.5em;
+	width:47%;
+	float:left;
+	position:relative; }
+
+.columnLeft,
+.columnRight,
+#featuredArea {	
+	background-image:url(../images/bgColumns.png);
+	border:1px dashed #ccc; }
+
+.columnRight {	
+	margin-left:1.4em; }
+
+.arrow {
+	position:absolute; }
+
+#featuredArea:hover .arrow {
+	width:94px;
+	height:40px;
+	top:-33px;
+	right:-50px;
+	background: url(../images/select-featured-arrow.png);
+	z-index:11; }
+
+.columnLeft:hover .arrow {
+	width:76px;
+	height:81px;
+	top:-75px;
+	right:-73px;
+	background: url(../images/select-left-arrow.png);
+	z-index:11 }
+
+.columnRight:hover .arrow {
+	width:43px;
+	height:89px;
+	top:-80px;
+	right:60px;
+	background: url(../images/select-right-arrow.png);
+	z-index:11 }
+
+a#instructorUrl {
+	cursor:pointer; }
+
+.instructorUrl {
+	display:none;
+	padding:10px; }
+
+#preview {
+	width:auto;
+	padding:15px;
+	color:#fff;
+	cursor:pointer;
+	background-color:#862633;
+	border:none;
+	font-size:15px; }
+
+#preview:hover {
+	background-color:#333; }
+
+#template {
+	padding:20px 0px;
+	background:#fff;
+	box-shadow:0px 0px 6px #999;  }
+
+#template .wrap {
+	border:1px dashed #666;
+	position:relative; }
+	
+.previewEdit {
+	width:420px;
+	margin-right:100px;
+	padding-left:45px;
+	padding-bottom:10px;
+	position:absolute;
+	top:-90px;
+	right:0px;
+	font-family:'Sue Ellen Francisco', cursive;
+	color:#666;
+	background:url(../images/arrow_preview.png) no-repeat bottom left;
+	transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg); /* IE 9 */
+	-webkit-transform:rotate(-3deg); /* Safari and Chrome */ }
+
+.previewEdit:after {
+	content:url(../images/arrow_editing.png);
+	width:64px;
+	height:33px;
+	position:absolute;
+	right:0px;
+	top:10px; }
+
+.previewEdit p,
+.grabCode p {
+	font-size:3em; }
+
+.grabCode {
+	padding-right:36px;
+	padding-bottom:15px;
+	position:absolute;
+	bottom:-45px;
+	left:-80px;
+	font-family:'Sue Ellen Francisco', cursive;
+	color:#666;
+	background:url(../images/arrow_grab.png) no-repeat bottom right;
+	transform:rotate(3deg);
+	-ms-transform:rotate(3deg); /* IE 9 */
+	-webkit-transform:rotate(3deg); /* Safari and Chrome */ }
+
+#embedCode .wrap {
+	padding:20px 0px 10px; }
+
+.embedLeft {
+	width:280px;
+	float:left; }
+
+.embedRight {
+	width:490px;
+	margin-top:10px;
+	margin-left:25px;
+	float:left; }
+
+#embedCode .wrap button {
+	padding:3px; }
+
+#embedCode textarea {
+	width:250px;
+	height:100px;
+	margin:10px; }
+
+#embedCode a {
+	position:relative;
+	cursor:pointer;
+	color:#900; }
+
+#editMode:hover span {
+	width:123px;
+	height:53px;
+	position:absolute;
+	top:-55px;
+	background:url(../images/ex_edit-mode.png);
+	border:1px solid #333; }
+
+#textEditor:hover span {
+	width:165px;
+	height:50px;
+	position:absolute;
+	top:-52px;
+	background:url(../images/ex_text-editor.png);
+	border:1px solid #333; }
+
+#sourceCode:hover span {
+	width:237px;
+	height:69px;
+	position:absolute;
+	top:-71px;
+	background:url(../images/ex_source-code.png);
+	border:1px solid #333; }
+
+/* MASTER TEMPLATE BB FIXES */
+#fsu-master-template {
+	font-family:Arial, Helvetica, sans-serif; }
+
+#fsu-master-template .color-banner h1 {
+	font-size:1.6em;
+	line-height:1.55em; }
+
+#fsu-master-template p {
+	line-height:1.4em; }
+	
+#fsu-master-template .text-area {
+	padding:0 !important; }
+/* END MASTER TEMPLATE BB FIXES */
+
+#footer .wrap {
+	padding-top:10px; }
+	
